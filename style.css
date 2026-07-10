@@ -124,3 +124,43 @@ footer {
     color: white;
     transform: scale(1.1);
 }
+
+===== MOBILE ===== */
+@media (max-width: 768px) {
+  body {
+    padding: 10px;
+  }/*
+
+  .container {
+    width: 100%;
+    padding: 0 15px;
+  }
+
+  h1 {
+    font-size:28px;
+    text-align: center;
+  }
+
+  .subtitulo {
+      font-size: 16px;
+    text-align: center;
+  }
+
+  /* Cards um embaixo do outro */
+  .projetos {
+    display: block;
+  }
+
+  .card-projeto {
+    width: 100%;
+    margin: 0 0 20px 0;
+    box-sizing: border-box;
+  }
+
+/* Botão maior pra dedo */
+  .card-projeto a {
+    padding: 12px;
+    display: block;
+    text-align: center;
+  }
+}

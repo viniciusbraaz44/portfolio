@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: rgb(130, 130, 141);
+    color: rgb(18, 19, 20);
+    line-height: 1.6;
+    padding: 20px;
+    max-width: 900px;
+    margin: auto;
+}
+
+header {
+    background-color: rgb(252, 249, 252);
+    color: rgb(12, 11, 11);
+    padding: 40px 20px;
+    text-align: center;
+    border-radius: 8px;
+    margin-bottom: 30px;
+}
+
+section {
+    background: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+
+h2{
+    color: black;
+    margin-bottom: 15px;
+    border-left: 4px;
+    padding-left: 10px;
+}
+
+.card-projeto {
+    border: 1px solid ;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.card-projeto a {
+    display: inline-block;
+    background-color: coral;
+    color: beige;
+    padding: 8px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.card-projeto a houver {
+    background-color: blueviolet;
+}
+
+#skills ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+#skills li {
+    background-color: rgb(109, 107, 107);
+    color: rgb(15, 12, 12);
+    padding: 8px 12px;
+    border-radius: 20px;
+}
+
+footer {
+    text-align: center;
+}
+
+#contato {
+    background-color: rgb(167, 163, 170);
+    padding: 60px 20px;
+    text-align: center;
+}
+
+#contatoh2 {
+    color: chocolate;
+    margin-bottom: 10px;
+}
+
+.contatos {
+    margin-top: 30px;
+}
+
+.botaoinsta {
+    background:linear-gradient();
+    color: white;
+    padding: 15px 30px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 30px;
+    display:inline-block
+    
+}
+.botaoinsta:hover {
+    transform:scale(1.1);
+    box-shadow: 0 5px 15px;
+}
+.link-insta {
+    color: aquamarine;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    background-color: white;
+    padding: 12px 25px;
+    border-radius: 30px;
+    display: inline-block;
+    margin-top: 15px;
+    transition: 0.3s;
+}
+
+.link-insta:hover {
+    background-color: blanchedalmond;
+    color: white;
+    transform: scale(1.1);
+}

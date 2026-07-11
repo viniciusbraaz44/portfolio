@@ -208,3 +208,51 @@ footer {
   header { padding: 50px 0; }
   .card-projeto { padding: 20px; }
 }
+.btn-voltar {
+    position: fixed;
+    top: 30px;
+    left: 30px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 12px 20px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 50px;
+    color: #fff;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    z-index: 1000;
+    transition: all 0.3s ease;
+}
+
+.btn-voltar:hover {
+    background: rgba(255, 255, 255, 0.2);
+    border-color: rgba(255, 255, 255, 0.4);
+    transform: translateX(-4px);
+}
+
+.btn-voltar svg {
+    transition: transform 0.3s ease;
+}
+
+.btn-voltar:hover svg {
+    transform: translateX(-3px);
+}
+
+/* Versão mobile */
+@media (max-width: 768px) {
+    .btn-voltar {
+        top: 20px;
+        left: 20px;
+        padding: 10px 16px;
+        font-size: 13px;
+    }
+    .btn-voltar span {
+        display: none; /* Só mostra a seta no celular */
+    }
+}

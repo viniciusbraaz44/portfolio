@@ -251,8 +251,46 @@ footer {
         left: 20px;
         padding: 10px 16px;
         font-size: 13px;
+  /* Botão Voltar Pro Portfólio */
+.voltar-portfolio {
+    position: fixed;
+    top: 30px;
+    left: 30px;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 0;
+    color: #ffffff;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 200;
+    font-size: 15px;
+    letter-spacing: 0.8px;
+    text-decoration: none;
+    opacity: 0.6;
+    transition: all 0.4s ease;
+    z-index: 1000;
+}
+
+.voltar-portfolio .seta {
+    font-size: 20px;
+    transition: transform 0.4s ease;
+}
+
+.voltar-portfolio:hover {
+    opacity: 1;
+    gap: 14px;
+}
+
+.voltar-portfolio:hover .seta {
+    transform: translateX(-4px);
+}
+
+@media (max-width: 768px) {
+    .voltar-portfolio {
+        top: 20px;
+        left: 20px;
     }
-    .btn-voltar span {
-        display: none; /* Só mostra a seta no celular */
+    .voltar-portfolio .texto {
+        display: none;
     }
 }

@@ -164,3 +164,79 @@ footer {
     text-align: center;
   }
 }
+/* ===== UPGRADE PROFISSIONAL ===== */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+* {
+  font-family: 'Poppins', sans-serif;
+  scroll-behavior: smooth;
+}
+
+body {
+  line-height: 1.7;
+  color: #333;
+}
+
+h1, h2, h3 {
+  font-weight: 600;
+  letter-spacing: -0.5px;
+  color: #1e3a8a;
+}
+
+/* Subtítulo mais elegante */
+.subtitulo {
+  font-size: 18px;
+  color: #6b7280;
+  font-weight: 300;
+  margin-top: -10px;
+}
+
+/* Cards com hover profissional */
+.card-projeto {
+  transition: all 0.3s ease;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+}
+
+.card-projeto:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+  border-color: #1e3a8a;
+}
+
+.card-projeto p {
+  color: #4b5563;
+  font-size: 15px;
+}
+
+/* Botão voltar ao topo */
+.btn-topo {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #1e3a8a;
+  color: white;
+  padding: 12px 16px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: 600;
+  box-shadow: 0 4px 12px rgba(30,58,138,0.3);
+  z-index: 100;
+  transition: all 0.3s ease;
+}
+
+.btn-topo:hover {
+  background: #1e40af;
+  transform: scale(1.05);
+}
+
+/* Links dos projetos mais bonitos */
+.card-projeto a {
+  color: #1e3a8a;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.card-projeto a:hover {
+  text-decoration: underline;
+}

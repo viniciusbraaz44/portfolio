@@ -20,7 +20,6 @@
 
     <section class="sobre">
         <img src="Imagens/jesus-cristo-quem-foi-e-sua-real-missao-na-terra-pascoa-ressuscitou.webp" alt="Jesus">
-
         <div>
             <h2>Quem foi Jesus?</h2>
             <p>
@@ -29,25 +28,31 @@
                 e eterna com Deus.
             </p>
             
-            <!-- TIREI O <body> DAQUI E ARRUMEI O BOTÃO -->
-            <button onclick="mostrarVersiculo()">mostrar versículo</button>
-            <p id="versiculo"></p>
+            <div class="versiculo-container">
+                <button class="btn-versiculo" onclick="mostrarVersiculo()">
+                    <span>✝️</span> Revelar Palavra
+                </button>
+                <div id="versiculo" class="versiculo-texto"></div>
+            </div>
         </div>
     </section>
 
-    <section>
+    <section class="ensinamentos">
         <h2>Seus ensinamentos</h2>
         <div class="cards">
             <div class="card">
-                <h3>❤️ Amor</h3>
+                <div class="card-icon">❤️</div>
+                <h3>Amor</h3>
                 <p>Ame o próximo como a si mesmo.</p>
             </div>
             <div class="card">
-                <h3>🙏 Perdão</h3>
+                <div class="card-icon">🙏</div>
+                <h3>Perdão</h3>
                 <p>Perdoe setenta vezes sete.</p>
             </div>
             <div class="card">
-                <h3>🕊 Paz</h3>
+                <div class="card-icon">🕊️</div>
+                <h3>Paz</h3>
                 <p>Bem-aventurados os pacificadores.</p>
             </div>
         </div>
@@ -70,15 +75,25 @@
       }
     });
 
-    // BOTÃO VERSÍCULO - AGORA MOSTRA NA TELA
+    // BOTÃO VERSÍCULO COM ANIMAÇÃO
     function mostrarVersiculo() {
       const versiculos = [
-        "João 3:16 - Porque Deus amou o mundo de tal maneira...",
-        "Filipenses 4:13 - Tudo posso naquele que me fortalece",
-        "Salmos 23:1 - O Senhor é o meu pastor, nada me faltará"
+        "João 3:16 - Porque Deus amou o mundo de tal maneira que deu o seu Filho unigênito, para que todo aquele que nele crê não pereça, mas tenha a vida eterna.",
+        "Filipenses 4:13 - Tudo posso naquele que me fortalece.",
+        "Salmos 23:1 - O Senhor é o meu pastor, nada me faltará.",
+        "Jeremias 29:11 - Porque eu bem sei os pensamentos que penso de vós, diz o Senhor.",
+        "Romanos 8:28 - E sabemos que todas as coisas contribuem juntamente para o bem daqueles que amam a Deus.",
+        "Mateus 11:28 - Vinde a mim, todos os que estais cansados e oprimidos, e eu vos aliviarei."
       ];
+      
       let aleatorio = versiculos[Math.floor(Math.random() * versiculos.length)];
-      document.getElementById('versiculo').innerText = aleatorio;
+      let divVersiculo = document.getElementById('versiculo');
+      
+      divVersiculo.classList.remove('show');
+      setTimeout(() => {
+        divVersiculo.innerText = aleatorio;
+        divVersiculo.classList.add('show');
+      }, 300);
     }
     </script>
 </body>

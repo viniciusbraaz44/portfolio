@@ -64,9 +64,8 @@
 
 </section>
 
-
-
 <script>
+// FUNÇÃO DO MODO ESCURO
 function trocarModo() {
   document.body.classList.toggle('dark');
   let btn = document.getElementById('modo-btn');
@@ -80,11 +79,40 @@ function trocarModo() {
   }
 }
 
-// Carrega o modo salvo
+// CARREGA O MODO SALVO
 if(localStorage.getItem('modo') === 'dark') {
   document.body.classList.add('dark');
   document.getElementById('modo-btn').innerHTML = '☀️';
 }
+
+// FUNÇÃO DO BOTÃO VERSÍCULO
+function mostrarVersiculo() {
+  // Troca esse texto pelos teus versículos
+  const versiculos = [
+    "João 3:16 - Porque Deus amou o mundo de tal maneira...",
+    "Filipenses 4:13 - Tudo posso naquele que me fortalece",
+    "Salmos 23:1 - O Senhor é o meu pastor, nada me faltará",
+    "Provérbios 3:5 - Confia no Senhor de todo o teu coração"
+  ];
+  
+  // Sorteia um versículo aleatório
+  let aleatorio = versiculos[Math.floor(Math.random() * versiculos.length)];
+  
+  // Mostra na tela - cria uma div se não existir
+  let divVersiculo = document.getElementById('versiculo-texto');
+  if (!divVersiculo) {
+    divVersiculo = document.createElement('div');
+    divVersiculo.id = 'versiculo-texto';
+    divVersiculo.style.marginTop = '20px';
+    divVersiculo.style.fontSize = '18px';
+    divVersiculo.style.fontWeight = 'bold';
+    document.querySelector('button[onclick="mostrarVersiculo()"]').after(divVersiculo);
+  }
+  divVersiculo.innerText = aleatorio;
+}
 </script>
+</body>
+
+
 </body>
 </html>

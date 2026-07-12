@@ -119,3 +119,15 @@ body.dark #modo-btn {
   background: #bb86fc;
   color: #121212;
 }
+/* CORRIGE O BOTÃO MOSTRAR VERSÍCULO */
+body.dark .btn-versiculo,
+body.dark button[onclick*="versiculo"],
+body.dark button[onclick*="mostrarVersiculo"] {
+  background: #bb86fc !important;
+  color: #121212 !important;
+  border: none;
+}
+
+body.dark .btn-versiculo:hover {
+  background: #9d6dff !important;
+}
